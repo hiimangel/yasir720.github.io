@@ -16,11 +16,11 @@ export const Help = () => {
     return (
         <div>
             <div className="min-h-screen bg-gray-600">
-                <Header />
+                <Header/>
 
                 <div className="h-64">
                     <div className="p-4 m-4 bg-green-300 h-full">
-                        <Helpsection />
+                        <Helpsection/>
                     </div>
                 </div>
 
