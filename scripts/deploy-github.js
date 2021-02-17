@@ -5,7 +5,7 @@ ghpages.publish(
   'public',
   {
     branch: 'master',
-    repo: 'https://github.com/yasir720/yasir720.github.io',
+    repo: 'https://github.com/yasir720/yasir720.github.io.git',
   },
   () => {
     console.log('Deploy Complete!')

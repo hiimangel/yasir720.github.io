@@ -38,8 +38,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-  "deploy:github": "npm run build && node ./scripts/deploy-github"
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy:github": "npm run build && node ./scripts/deploy-github"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
