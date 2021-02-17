@@ -1,5 +1,5 @@
 {
-  "homepage": "http://yasir720.github.io/yasir720.github.io",
+  "homepage": "http://yasir720.github.io/myapp",
   "name": "gatsby-starter-default",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
@@ -31,12 +31,15 @@
     "semantic-ui-react": "^2.0.3"
   },
   "scripts": {
+    "build": "npm run clean && gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "deploy": "gh-pages -d build",
+  "deploy:github": "npm run build && node ./scripts/deploy-github"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
@@ -49,14 +52,6 @@
     "gatsby"
   ],
   "license": "0BSD",
-  "scripts": {
-    "build": "npm run clean && gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
