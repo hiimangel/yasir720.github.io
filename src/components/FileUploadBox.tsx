@@ -1,5 +1,4 @@
 import React, { useMemo, useState } from "react";
-import { useEffect } from "react";
 import { useDropzone } from "react-dropzone";
 
 const baseStyle = {
@@ -58,22 +57,22 @@ const FileUploadBox: React.FC<TextUpload> = ({ files, onDrop }) => {
         },
     });
 
-    const acceptedFileItems = acceptedFiles.map(file => (
-        <li key={file.path}>
-            {file.path} - {file.size} bytes
-        </li>
-    ));
+    // const acceptedFileItems = acceptedFiles.map(file => (
+    //     <li key={file.path}>
+    //         {file.path} - {file.size} bytes
+    //     </li>
+    // ));
 
-    const fileRejectionItems = fileRejections.map(({ file, errors }) => (
-        <li key={file.path}>
-            {file.path} - {file.size} bytes
-            <ul>
-                {errors.map(e => (
-                    <li key={e.code}>{e.message}</li>
-                ))}
-            </ul>
-        </li>
-    ));
+    // const fileRejectionItems = fileRejections.map(({ file, errors }) => (
+    //     <li key={file.path}>
+    //         {file.path} - {file.size} bytes
+    //         <ul>
+    //             {errors.map(e => (
+    //                 <li key={e.code}>{e.message}</li>
+    //             ))}
+    //         </ul>
+    //     </li>
+    // ));
 
     const style: any = useMemo(
         () => ({

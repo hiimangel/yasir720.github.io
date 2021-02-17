@@ -1,9 +1,6 @@
 import * as React from "react";
-import FileUploadBox from "../../components/FileUploadBox";
-import CopyPasteBox from "../../components/CopyPasteBox";
 //import Modal from 'react-bootstrap/Modal';
 import Header from "../../components/header";
-import Uploads from "../../components/Uploads";
 import AboutSection from "../../components/AboutSection";
 
 export const About = () => {

@@ -1,14 +1,13 @@
 import * as React from "react";
 import FileUploadBox from "../../components/FileUploadBox";
 import CopyPasteBox from "../../components/CopyPasteBox";
-//import Modal from 'react-bootstrap/Modal';
 import Header from "../../components/header";
 import Uploads from "../../components/Uploads";
 
 export const Landing = () => {
-    const [showModal, setShowModal] = React.useState(false);
+    // const [showModal, setShowModal] = React.useState(false);
 
-    let ShowModalCSS = "None";
+    // let ShowModalCSS = "None";
 
     //implement function to close modal
     //to do list

@@ -1,7 +1,7 @@
 import * as React from "react";
 // import logo from '../images/logo';
 import logo from "../images/githublogo.png";
-import group from "../images/Group10logo2.png";
+import group from "./../images/Group10logo2.png";
 import { Link } from "gatsby";
 
 export default class Header extends React.Component {
@@ -11,13 +11,13 @@ export default class Header extends React.Component {
                 <div className="sm:px-8">
                     <div>
                         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-                            <a>
+                            <div>
                                 <img
                                     className="h-10"
                                     src={group}
                                     alt="Group 10 Logo"
                                 ></img>
-                            </a>
+                            </div>
 
                             <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                                 <Link to="/">Home</Link>
