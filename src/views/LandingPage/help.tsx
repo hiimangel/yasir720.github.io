@@ -1,7 +1,7 @@
 import * as React from "react";
 //import Modal from 'react-bootstrap/Modal';
-import Header from "../../components/header";
-import Helpsection from "../../components/HelpSection";
+import Header from "./../../components/Header";
+import Helpsection from "./../../components/HelpSection";
 
 export const Help = () => {
     const [showModal, setShowModal] = React.useState(false);

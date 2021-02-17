@@ -1,7 +1,7 @@
 import * as React from "react";
 //import Modal from 'react-bootstrap/Modal';
-import Header from "../../components/header";
-import AboutSection from "../../components/AboutSection";
+import Header from "./../../components/Header";
+import AboutSection from "./../../components/AboutSection";
 
 export const About = () => {
     const [showModal, setShowModal] = React.useState(false);
